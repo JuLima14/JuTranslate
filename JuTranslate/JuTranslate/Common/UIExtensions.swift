@@ -27,3 +27,35 @@ extension UIColor {
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 }
+
+extension UIButton {
+    
+    func activateAnimation() {
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(doPressEffect(sender:))))
+    }
+    
+    @objc private func doPressEffect(sender: UITapGestureRecognizer) {
+        let point = sender.location(in: self)
+        
+        let circleView = CircleView(color: Core.shared.stylesheet.softBlue)
+        self.addSubview(circleView)
+        
+        circleView.snp.makeConstraints { (make) in
+            make.centerX.equalTo(point.x)
+            make.centerY.equalTo(point.y)
+            make.height.width.equalTo(15)
+        }
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            circleView.snp.updateConstraints({ (make) in
+                make.centerX.equalTo(point.x)
+                make.centerY.equalTo(point.y)
+                make.height.width.equalTo(200)
+            })
+            circleView.alpha = 0.4
+            circleView.layoutIfNeeded()
+        }) { _ in
+            circleView.removeFromSuperview()
+        }
+    }
+}

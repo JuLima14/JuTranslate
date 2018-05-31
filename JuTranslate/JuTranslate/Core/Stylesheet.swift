@@ -49,6 +49,6 @@ import UIKit
             if let font = UIFont(name: name.rawValue, size: size) {
                 return font
             }
-            return UIFont.systemFont(ofSize: 12)
+            return UIFont.systemFont(ofSize: 15)
         }
     }
