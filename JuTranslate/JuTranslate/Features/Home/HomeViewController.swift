@@ -10,7 +10,6 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
-    
     var homeView: HomeView!
     
     override func viewDidLoad() {

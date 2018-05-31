@@ -10,10 +10,11 @@ import UIKit
 import SnapKit
 
 class ViewOptionButtons: UIView {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.white
-        self.translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = UIColor.white
+        translatesAutoresizingMaskIntoConstraints = false
         setupView()
     }
     
@@ -49,8 +50,8 @@ class ViewOptionButtons: UIView {
         let viewShadow: UIView = {
             let backgroundView = UIView(frame: .zero)
             backgroundView.translatesAutoresizingMaskIntoConstraints = false
-            self.layer.masksToBounds = false
-            self.clipsToBounds = false
+            layer.masksToBounds = false
+            clipsToBounds = false
             let gradientColors = [Core.shared.stylesheet.black.cgColor, Core.shared.stylesheet.middleGray.cgColor, Core.shared.stylesheet.clear.cgColor]
             let gradientLocations = [0.0, 0.5, 1.0]
             let gradientLayer = CAGradientLayer()
@@ -63,24 +64,24 @@ class ViewOptionButtons: UIView {
             return backgroundView
         }()
         
-        self.addSubview(buttonPhoto)
-        self.addSubview(buttonAudio)
-        self.addSubview(buttonPenPad)
-        self.addSubview(viewShadow)
+        addSubview(buttonPhoto)
+        addSubview(buttonAudio)
+        addSubview(buttonPenPad)
+        addSubview(viewShadow)
         
         buttonPhoto.snp.makeConstraints { (make) in
             make.centerY.equalToSuperview()
             make.left.equalToSuperview().inset(50)
         }
         buttonAudio.snp.makeConstraints { (make) in
-            make.center.equalTo(self.snp.center)
+            make.center.equalTo(snp.center)
         }
         buttonPenPad.snp.makeConstraints { (make) in
             make.centerY.equalToSuperview()
             make.right.equalToSuperview().inset(50)
         }
         viewShadow.snp.makeConstraints { (make) in
-            make.top.equalTo(self.snp.bottom)
+            make.top.equalTo(snp.bottom)
             make.left.right.equalToSuperview()
             make.height.equalTo(6.0)
         }

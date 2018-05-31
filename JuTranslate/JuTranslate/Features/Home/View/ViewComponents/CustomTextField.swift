@@ -21,11 +21,11 @@ class CustomTextField: UITextField {
     }
     
     func setupView(){
-        self.attributedPlaceholder = NSAttributedString(string: "Enter text",attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.darkGray])
-        self.textColor = UIColor.gray
-        self.textAlignment = .natural
-        self.backgroundColor = UIColor.white
-        self.translatesAutoresizingMaskIntoConstraints = false
+        attributedPlaceholder = NSAttributedString(string: "Enter text",attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.darkGray])
+        textColor = UIColor.gray
+        textAlignment = .natural
+        backgroundColor = UIColor.white
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {

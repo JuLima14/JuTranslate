@@ -24,6 +24,7 @@ class SavedViewController: UIViewController, UICollectionViewDataSource, UIColle
         savedView.cardsCollectionView.delegate = self
         savedView.cardsCollectionView.dataSource = self
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }

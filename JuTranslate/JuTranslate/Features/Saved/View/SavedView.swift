@@ -10,7 +10,7 @@ import UIKit
 
 class SavedView: UIView {
     
-    public var cardsCollectionView: UICollectionView!
+    var cardsCollectionView: UICollectionView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)

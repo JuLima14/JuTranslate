@@ -28,6 +28,9 @@
 		37CB50C320BF340C003423C3 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50C220BF340C003423C3 /* CardCell.swift */; };
 		37CB50C520BF972C003423C3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50C420BF972C003423C3 /* ShadowView.swift */; };
 		37CB50D820BF9F41003423C3 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50D720BF9F41003423C3 /* SavedView.swift */; };
+		37CB50DC20BFA460003423C3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50DB20BFA460003423C3 /* SettingsView.swift */; };
+		37CB50DE20BFA47E003423C3 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50DD20BFA47E003423C3 /* OptionTableViewCell.swift */; };
+		37CB50E020BFA495003423C3 /* ClearHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50DF20BFA495003423C3 /* ClearHistoryTableViewCell.swift */; };
 		5643B6221309AFC069450206 /* Pods_JuTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5EAAE370AD6FEBE907C048 /* Pods_JuTranslate.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		37CB50D320BF9944003423C3 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		37CB50D420BF9944003423C3 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		37CB50D720BF9F41003423C3 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		37CB50DB20BFA460003423C3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		37CB50DD20BFA47E003423C3 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		37CB50DF20BFA495003423C3 /* ClearHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5D8C296FAAD00289ED038972 /* Pods-JuTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuTranslate.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuTranslate/Pods-JuTranslate.release.xcconfig"; sourceTree = "<group>"; };
 		5E5EAAE370AD6FEBE907C048 /* Pods_JuTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621672457C3F048E5689EB56 /* Pods-JuTranslate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuTranslate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuTranslate/Pods-JuTranslate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		37CB509D20BF18AF003423C3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				37CB50D920BFA42B003423C3 /* View */,
 				37CB50AE20BF1B78003423C3 /* SettingsViewController.swift */,
 			);
 			path = Settings;
@@ -254,6 +261,24 @@
 				37CB50D720BF9F41003423C3 /* SavedView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		37CB50D920BFA42B003423C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37CB50DA20BFA433003423C3 /* ViewComponents */,
+				37CB50DB20BFA460003423C3 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37CB50DA20BFA433003423C3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				37CB50DD20BFA47E003423C3 /* OptionTableViewCell.swift */,
+				37CB50DF20BFA495003423C3 /* ClearHistoryTableViewCell.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		D4EDC7BCD5C9B2D985DC988F /* Frameworks */ = {
@@ -382,6 +407,7 @@
 				37CB50BB20BF2F47003423C3 /* ViewOptionButtons.swift in Sources */,
 				37CB50A920BF1AF1003423C3 /* MainTabBarController.swift in Sources */,
 				37CB50B120BF255A003423C3 /* MainTabBarItem.swift in Sources */,
+				37CB50DC20BFA460003423C3 /* SettingsView.swift in Sources */,
 				373726C720BEFF2400AE1851 /* AppDelegate.swift in Sources */,
 				37CB50BD20BF2F5A003423C3 /* ViewSelectorLanguage.swift in Sources */,
 				37CB50C320BF340C003423C3 /* CardCell.swift in Sources */,
@@ -396,6 +422,8 @@
 				37CB50AD20BF1B63003423C3 /* SavedViewController.swift in Sources */,
 				37CB509F20BF18CE003423C3 /* Core.swift in Sources */,
 				37CB50AF20BF1B78003423C3 /* SettingsViewController.swift in Sources */,
+				37CB50E020BFA495003423C3 /* ClearHistoryTableViewCell.swift in Sources */,
+				37CB50DE20BFA47E003423C3 /* OptionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,8 +13,8 @@ class ViewSelectorLanguage: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.white
-        self.translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = UIColor.white
+        translatesAutoresizingMaskIntoConstraints = false
         
         setupView()
     }
@@ -53,14 +53,14 @@ class ViewSelectorLanguage: UIView {
             return button
         }()
         
-        self.addSubview(labelLanguageLeft)
-        self.addSubview(buttonSelector)
-        self.addSubview(labelLanguageRight)
+        addSubview(labelLanguageLeft)
+        addSubview(buttonSelector)
+        addSubview(labelLanguageRight)
         
         labelLanguageLeft.snp.makeConstraints { (make) in
             make.topMargin.bottomMargin.equalToSuperview()
             make.rightMargin.equalTo(buttonSelector.snp.leftMargin)
-            make.leftMargin.equalTo(self.snp.left)
+            make.leftMargin.equalTo(snp.left)
         }
         buttonSelector.snp.makeConstraints { (make) in
             make.centerWithinMargins.equalToSuperview()
@@ -70,7 +70,7 @@ class ViewSelectorLanguage: UIView {
         labelLanguageRight.snp.makeConstraints { (make) in
             make.topMargin.bottomMargin.equalToSuperview()
             make.leftMargin.equalTo(buttonSelector.snp.rightMargin)
-            make.rightMargin.equalTo(self.snp.right)
+            make.rightMargin.equalTo(snp.right)
         }
     }
 

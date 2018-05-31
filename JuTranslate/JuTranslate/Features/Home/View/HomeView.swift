@@ -10,11 +10,11 @@ import UIKit
 
 class HomeView: UIView {
     
-    public var cardsCollectionView: UICollectionView!
+    var cardsCollectionView: UICollectionView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.white
+        backgroundColor = UIColor.white
         setupHomeView()
     }
     
@@ -25,21 +25,21 @@ class HomeView: UIView {
     
     private func setupHomeView(){
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: self.layer.frame.width - 20, height: 70)
-        self.cardsCollectionView = UICollectionView(frame: self.bounds, collectionViewLayout: flowLayout)
-        self.cardsCollectionView.backgroundColor = Core.shared.stylesheet.midLightGray
-        self.cardsCollectionView.register(CardCell.self, forCellWithReuseIdentifier: "cellid")
+        flowLayout.itemSize = CGSize(width: layer.frame.width - 20, height: 70)
+        cardsCollectionView = UICollectionView(frame: bounds, collectionViewLayout: flowLayout)
+        cardsCollectionView.backgroundColor = Core.shared.stylesheet.midLightGray
+        cardsCollectionView.register(CardCell.self, forCellWithReuseIdentifier: "cellid")
         
         let viewUpperBar = NavigationCustomBar(type: .HomeNavigationBar)
         let viewSelectorLanguage = ViewSelectorLanguage(frame: CGRect.zero)
         let textToTranslate = CustomTextField(frame: CGRect.zero)
         let viewOptionButtons = ViewOptionButtons(frame: CGRect.zero)
         
-        self.addSubview(viewUpperBar)
-        self.addSubview(viewSelectorLanguage)
-        self.addSubview(textToTranslate)
-        self.addSubview(viewOptionButtons)
-        self.addSubview(self.cardsCollectionView)
+        addSubview(viewUpperBar)
+        addSubview(viewSelectorLanguage)
+        addSubview(textToTranslate)
+        addSubview(viewOptionButtons)
+        addSubview(cardsCollectionView)
         
         
         viewUpperBar.snp.makeConstraints { (make) in
@@ -62,7 +62,7 @@ class HomeView: UIView {
             make.right.left.equalToSuperview()
             make.height.equalTo(50)
         }
-        self.cardsCollectionView.snp.makeConstraints { (make) in
+        cardsCollectionView.snp.makeConstraints { (make) in
             make.top.equalTo(viewOptionButtons.snp.bottom).offset(1)
             make.left.right.bottom.equalToSuperview()
         }
