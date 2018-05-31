@@ -27,6 +27,7 @@
 		37CB50C120BF33D0003423C3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50C020BF33D0003423C3 /* CircleView.swift */; };
 		37CB50C320BF340C003423C3 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50C220BF340C003423C3 /* CardCell.swift */; };
 		37CB50C520BF972C003423C3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50C420BF972C003423C3 /* ShadowView.swift */; };
+		37CB50D820BF9F41003423C3 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB50D720BF9F41003423C3 /* SavedView.swift */; };
 		5643B6221309AFC069450206 /* Pods_JuTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5EAAE370AD6FEBE907C048 /* Pods_JuTranslate.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		37CB50D220BF9944003423C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		37CB50D320BF9944003423C3 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		37CB50D420BF9944003423C3 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		37CB50D720BF9F41003423C3 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
 		5D8C296FAAD00289ED038972 /* Pods-JuTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuTranslate.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuTranslate/Pods-JuTranslate.release.xcconfig"; sourceTree = "<group>"; };
 		5E5EAAE370AD6FEBE907C048 /* Pods_JuTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621672457C3F048E5689EB56 /* Pods-JuTranslate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuTranslate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuTranslate/Pods-JuTranslate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		37CB509C20BF18A9003423C3 /* Saved */ = {
 			isa = PBXGroup;
 			children = (
+				37CB50D620BF9F2B003423C3 /* View */,
 				37CB50AC20BF1B63003423C3 /* SavedViewController.swift */,
 			);
 			path = Saved;
@@ -243,6 +246,14 @@
 				37CB50C920BF9942003423C3 /* Roboto-ThinItalic.ttf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		37CB50D620BF9F2B003423C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37CB50D720BF9F41003423C3 /* SavedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D4EDC7BCD5C9B2D985DC988F /* Frameworks */ = {
@@ -379,6 +390,7 @@
 				37CB50C120BF33D0003423C3 /* CircleView.swift in Sources */,
 				37CB50B720BF2ECC003423C3 /* HomeView.swift in Sources */,
 				37CB50A120BF18FD003423C3 /* Stylesheet.swift in Sources */,
+				37CB50D820BF9F41003423C3 /* SavedView.swift in Sources */,
 				37CB50AB20BF1B49003423C3 /* HomeViewController.swift in Sources */,
 				37CB50B920BF2F36003423C3 /* CustomTextField.swift in Sources */,
 				37CB50AD20BF1B63003423C3 /* SavedViewController.swift in Sources */,

@@ -29,14 +29,14 @@ class Logger {
             
             if let shouldShowOnConsole = dict["SWIFTY_BEAVER_CONSOLE"] as? Bool, shouldShowOnConsole == true {
                 let console = ConsoleDestination()
-                console.format = self.logFormat
+                console.format = logFormat
                 log.addDestination(console)
             }
             
             if let fileDestination = dict["SWIFTY_BEAVER_FILE_URL"] as? String {
                 let file = FileDestination()
                 file.logFileURL = URL(fileURLWithPath: fileDestination)
-                file.format = self.logFormat
+                file.format = logFormat
                 log.addDestination(file)
             }
         }
