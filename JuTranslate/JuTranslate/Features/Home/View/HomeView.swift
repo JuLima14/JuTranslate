@@ -41,7 +41,6 @@ class HomeView: UIView {
         addSubview(viewOptionButtons)
         addSubview(cardsCollectionView)
         
-        
         viewUpperBar.snp.makeConstraints { (make) in
             make.top.left.right.equalToSuperview()
             make.height.equalTo(70)

@@ -1,0 +1,8 @@
+target 'JuTranslate' do
+  use_frameworks!
+
+  # Pods for JuTranslate
+  pod 'SnapKit'
+  pod 'SwiftyBeaver'
+
+end

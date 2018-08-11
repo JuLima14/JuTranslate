@@ -1,0 +1,6 @@
+framework module Pods_JuTranslate {
+  umbrella header "Pods-JuTranslate-umbrella.h"
+
+  export *
+  module * { export * }
+}
